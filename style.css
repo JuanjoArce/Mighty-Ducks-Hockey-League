@@ -5,37 +5,42 @@
 }
 
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 80px;
-    background-color: rgb(223, 222, 181);
+    background-color: #fff184;
+    margin-top: 20px;
 }
 
 .encabezado{
-    font-size: 60px;
+    font-size: 97px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f7e02e;
+    -webkit-text-stroke: 1px #211916;
+    color: #5fa098;
+    padding-bottom: 20px; 
 }
 
 .nav{
-    text-align: right;
-    position: relative;
+   text-align: right;
+   padding: 10px;
+   background-color: #211916;
+   font-size: 20px;
 }
 
 .nav a{
     text-decoration: none;
-    border: 1px solid black;
-    margin: 2px;
-    padding: 3px;
-    background-color: hsl(229, 64%, 63%);
-    color: antiquewhite;
-    font-size: 18px;
-    box-shadow: 2px 2px black;
+    color: #211916;
+    background-color: #5fa098;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#home,#about,#contact{
-    background-color: #77DD77;
+#home,#about,#contact,#games,#rules{
+    background-color: #f7e02e;
 }
 
 .banner{
     width: 100%;
+    padding-top: 4px;
 }
 
 .figure1{
@@ -44,18 +49,21 @@ body{
     right: 80px;
 }
 .hockey1{
-    width: 360px;
+    width: 460px;
+    padding-top: 10px;
 }
 
 .pie_banner{
     text-align: center;
-    font-size: 30px;
-    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #211916;
+    color: #f7e02e;
+    padding: 20px;
 }
 
 .player_about{
     position: absolute;
-    width: 400px;
+    width: 390px;
     right: 80px;
 }
 
@@ -69,23 +77,40 @@ body{
     position: absolute;
 }
 
-article{
+#art_index{
     display:inline-block;
     position: absolute;
-    left: 320px;
-    font-size: 25px;
+    left: 380px;
+    font-size: 22px;
     padding-top: 30px;
     padding-bottom: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#art_index h3{
+    text-align: center;
+    background-color: #5fa098;
 }
 .about{
     font-size: 20px;
     padding: 10px 480px 100px 10px;
+    display:inline-block;
+    position: absolute;
+    left: 380px;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about h2{
+    background-color: #5fa098;
+    text-align: center;
 }
 .hockey3{
     position: absolute;
     display: inline-block;
     right: 80px;
     padding-bottom: 100px;
+    padding-top: 10px;
 }
 
 .email{
@@ -93,5 +118,60 @@ article{
     display: inline-block;
     left: 320px;
     padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.games{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1px;
+    background-color: #f7e02e;
+    width: 100%;
+}
+tr, th, td{
+    padding: 15px;
+    margin: 15px;
+    font-size: 20px;
+    color: #211916;
+    background-color: #5fa098;
+    border-collapse: collapse;
+    text-align: center;
+}
+.pie_games{
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+.infoGames h2{
+    display: inline-block;
+}
+
+.art_games{
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 50px;
+    background-color: #5fa098;
+}
+.phoneEmail{
+    display: flex;
+    justify-content: space-between;
+}
+
+#imgRules{
+    width: 100%;
+    padding-top: 5px;
+}
+.artRules{
+    background-color: #5fa098;
+    list-style-position: inside;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tituloRules{
+    text-align: center;
+    padding: 50px;
+    background-color: #f7e02e;
+}
+.rules{
+    padding: 50px;
+}
