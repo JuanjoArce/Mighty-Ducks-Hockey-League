@@ -34,7 +34,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#home,#about,#contact,#games,#rules{
+#home,#about,#contact,#games,#rules,#registration{
     background-color: #f7e02e;
 }
 
@@ -127,6 +127,17 @@ body{
     background-color: #f7e02e;
     width: 100%;
 }
+.games a{
+    text-decoration: none;
+    color: #f7e02e;
+}
+#aj,#greenbay,#howard,#marjorie,#north,#south{
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    background-color: #f7e02e;
+}
+
 tr, th, td{
     padding: 15px;
     margin: 15px;
@@ -174,4 +185,23 @@ tr, th, td{
 }
 .rules{
     padding: 50px;
+}
+.registration{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#5fa098 ;
+    font-size: x-large;
+    line-height: 190%;
+    padding: 30px;
+
+}
+
+.registration legend{
+    font-size: xx-large;
+    background-color: #f7e02e;
+}
+.gender, .grade, .closestSchool, .position, .uniform{
+    display: inline;    
+}
+.registrationPadding{
+    padding: 40px;
 }

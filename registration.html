@@ -30,10 +30,10 @@
         
     </header>
 
-    <form action="./show-data.html" method="get">
-        <fieldset>
+    <form class="registration" action="./show-data.html" method="get">
+        <fieldset id="players">
             <legend>Registration Form</legend>
-
+            <div class="registrationPadding">
             <label for="firstName">Player´s First Name:</label>  
             <input type="text" name="firstName" id="firstName" placeholder=" First Name">
 
@@ -41,7 +41,7 @@
                 <span>Last Name:</span>
                 <input type="text" name="lastName" placeholder=" Last Name">
             </label>
-
+            <br>
             <label>
                 <span>Street Address:</span>
                 <input type="text" name="streetAddress" placeholder=" Street Address">
@@ -51,17 +51,17 @@
                 <span>City:</span>
                 <input type="text" name="city" placeholder=" City">
             </label>
-
+            <br>
             <label>
                 <span>Zip Code:</span>
                 <input type="number" name="zipCode" placeholder=" Zip Code">
             </label>
-
+            <br>
             <label>
-                <span>Birth Date(mm/dd/yyyy):</span>
-                <input type="number" name="birthDate" placeholder=" Birth Date">
+                <span>Birth Date (mm/dd/yyyy):</span>
+                    <input type="date" name="Birth Date" placeholder=" Birth Date">
             </label>
-
+            <br>
             <label>
                 <span>Gender:</span>
                 <div class="gender" id="Female"></div>
@@ -105,11 +105,14 @@
                 <input type="radio" name="grade" value="5st">
                 <span>5st</span>
             </label>
-
+            </div>
         </fieldset> 
-        <fieldset>
-            <span>Which elementary school do you live near?</span>
+        <br>
+        <fieldset id="school">
             <legend>Closest School:</legend>
+            <div class="registrationPadding">
+            <span>Which elementary school do you live near?</span>
+            <br>
             <label>
                 <div class="closestSchool" id="AJ_Katzenmaier"></div>
                 <input type="radio" name="closestSchool" value="AJ_Katzenmaier">
@@ -120,6 +123,7 @@
                 <input type="radio" name="closestSchool" value="Greenbay">
                 <span>Greenbay</span>
             </label>
+            <br>
             <label>
                 <div class="closestSchool" id="Howard A Yeager"></div>
                 <input type="radio" name="closestSchool" value="Howard A Yeager">
@@ -130,6 +134,7 @@
                 <input type="radio" name="closestSchool" value="Marjorie P Hart">
                 <span>Marjorie P Hart</span>
             </label>
+            <br>
             <label>
                 <div class="closestSchool" id="North Elementary"></div>
                 <input type="radio" name="closestSchool" value="North Elementary">
@@ -140,9 +145,12 @@
                 <input type="radio" name="closestSchool" value="South Elementary">
                 <span>South Elementary</span>
             </label>
+            </div>
         </fieldset>
-        <fieldset>
-            <legend>What position(s) do you normally play? (check all that apply):</legend>
+        <br>
+        <fieldset id="positionPlay">
+            <legend>What position(s) do you normally play?<br>(check all that apply):</legend>
+            <div class="registrationPadding">
             <label>
                 <div class="position" id="Forward"></div>
                 <input type="checkbox" name="position" value="Forward">
@@ -163,9 +171,12 @@
                 <input type="checkbox" name="position" value="Goalkeeper">
                 <span>Goalkeeper</span>
             </label>
-        </fieldset>       
-        <fieldset>
+            </div>
+        </fieldset> 
+        <br>      
+        <fieldset id="uniform">
             <legend>Uniform Size:</legend>
+            <div class="registrationPadding">
             <label>
                 <div class="uniform" id="Youth Small"></div>
                 <input type="radio" name="uniform" value="Youth Small">
@@ -181,6 +192,7 @@
                 <input type="radio" name="uniform" value="Youth Large">
                 <span>Youth Large</span>
             </label>
+            <br>
             <label>
                 <div class="uniform" id="Small"></div>
                 <input type="radio" name="uniform" value="Small">
@@ -201,13 +213,29 @@
                 <input type="radio" name="uniform" value="Extra-Large">
                 <span>Extra-Large</span>
             </label>
+            </div>
         </fieldset>
-        <fieldset>
+        <br>
+        <fieldset id="permission">
             <legend>Permission to Play</legend>
+            <br>
+            <div class="registrationPadding">
             <span>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL).
                 In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities,
                 I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant´s participation in the programand/orbeing trasported to or from MDHL sponsored activities, wich transportation.
                 By signing below, I herebyagre andauthorizethe above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</span>
+                <br>
+                <br>
+                <label>
+                    <span>Parent/GuardianSignature:</span>
+                    <input type="text" name="Parent/GuardianSignature:" placeholder=" Parent/GuardianSignature">
+                </label>
+    
+                <label>
+                    <span>Date:</span>
+                    <input type="date" name="Date" placeholder=" Date">
+                </label>
+            </div>
         </fieldset>    
 
     </form>
