@@ -5,7 +5,6 @@
 }
 
 body{
-    margin: 80px;
     background-color: #fff184;
     margin-top: 20px;
 }
@@ -34,7 +33,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#home,#about,#contact,#games,#rules{
+#home,#about,#contact,#games,#rules,#registration{
     background-color: #f7e02e;
 }
 
@@ -127,6 +126,17 @@ body{
     background-color: #f7e02e;
     width: 100%;
 }
+.games a{
+    text-decoration: none;
+    color: #f7e02e;
+}
+#aj,#greenbay,#howard,#marjorie,#north,#south{
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    background-color: #f7e02e;
+}
+
 tr, th, td{
     padding: 15px;
     margin: 15px;
@@ -174,4 +184,67 @@ tr, th, td{
 }
 .rules{
     padding: 50px;
+}
+.registration{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#5fa098 ;
+    font-size: x-large;
+    line-height: 190%;
+    padding: 30px;
+
+}
+
+.registration legend{
+    font-size: xx-large;
+    background-color: #f7e02e;
+}
+.gender, .grade, .closestSchool, .position, .uniform{
+    display: inline;    
+}
+.registrationPadding{
+    padding: 40px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+    .encabezado h1{
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #art_index{
+        position: static;
+    }
+    .hockey1{
+        position: static;
+        width: 100%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+     }
+     
+     .nav a{
+        text-align: center;
+     }
+     .banner{
+        display: flex;
+        flex-direction: column;
+     }
+     .logo, .email, .about{
+        position: static;
+     }
+     .about{
+        padding: 2px;
+     }
+     .player_about{
+        position: absolute;
+        width: 390px;
+     }
+     .logo{
+        width: 100%;
+     }
+     
+
 }
