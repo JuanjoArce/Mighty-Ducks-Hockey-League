@@ -5,7 +5,6 @@
 }
 
 body{
-    margin: 80px;
     background-color: #fff184;
     margin-top: 20px;
 }
@@ -204,4 +203,48 @@ tr, th, td{
 }
 .registrationPadding{
     padding: 40px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+    .encabezado h1{
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #art_index{
+        position: static;
+    }
+    .hockey1{
+        position: static;
+        width: 100%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+     }
+     
+     .nav a{
+        text-align: center;
+     }
+     .banner{
+        display: flex;
+        flex-direction: column;
+     }
+     .logo, .email, .about{
+        position: static;
+     }
+     .about{
+        padding: 2px;
+     }
+     .player_about{
+        position: absolute;
+        width: 390px;
+     }
+     .logo{
+        width: 100%;
+     }
+     
+
 }
